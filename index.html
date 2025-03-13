@@ -8,21 +8,25 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; }
         h1 { color: #ff6f00; }
-        .endpoint { border: 1px solid #ddd; padding: 10px; margin: 10px 0; }
+        .endpoint { border: 1px solid #ddd; padding: 10px; margin: 10px 0; padding: 10px; }
         button { padding: 5px 10px; margin-top: 5px; cursor: pointer; background: #ff6f00; color: #fff; border: none; }
-        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
     </style>
 </head>
 <body>
     <h1>API Documentation</h1>
-    <div id="api-container"></div>
+    <div id="api-container">Loading API collection...</div>
 
     <script>
         async function loadCollection() {
             try {
+                // Adjust the JSON file path based on GitHub Pages
                 const response = await fetch('Mulesoft.postman_collection.json');
+                if (!response.ok) throw new Error("JSON file not found!");
+
                 const collection = await response.json();
                 const apiContainer = document.getElementById("api-container");
+                apiContainer.innerHTML = ""; // Clear loading text
 
                 collection.item.forEach(endpoint => {
                     const div = document.createElement("div");
@@ -35,22 +39,22 @@
                         <h3>${endpoint.name}</h3>
                         <p><strong>Method:</strong> ${method}</p>
                         <p><strong>URL:</strong> ${url}</p>
-                        <button onclick="testAPI('${method}', '${url}')">Try It</button>
-                        <pre id="response-${endpoint.name}"></pre>
+                        <button onclick="testAPI('${method}', '${url}', 'response-${endpoint.name}')">Try It</button>
+                        <pre id="response-${endpoint.name}">Click "Try It" to test</pre>
                     `;
                     apiContainer.appendChild(div);
                 });
             } catch (error) {
-                console.error("Error loading collection:", error);
+                document.getElementById("api-container").innerHTML = `<p style="color:red;">Error loading API collection: ${error}</p>`;
             }
         }
 
-        async function testAPI(method, url) {
+        async function testAPI(method, url, responseId) {
             try {
                 const response = await axios({ method, url });
-                alert(`Response: ${JSON.stringify(response.data, null, 2)}`);
+                document.getElementById(responseId).textContent = JSON.stringify(response.data, null, 2);
             } catch (error) {
-                alert(`Error: ${error}`);
+                document.getElementById(responseId).textContent = `Error: ${error}`;
             }
         }
 
