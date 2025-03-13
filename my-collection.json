@@ -25,27 +25,27 @@
 						"header": [
 							{
 								"key": "client_id",
-								"value": "{{client_id}}",
+								"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 								"description": "The client_id in MuleSoft is used for authentication and authorization in API security, CloudHub deployments, and OAuth 2.0 integrations.",
 								"type": "text"
 							},
 							{
 								"key": "client_secret",
-								"value": "{{client_secret}}",
+								"value": "5792f47e59824BF08022a7b9B6e53396",
 								"description": "The client_secret in MuleSoft is a confidential key used along with the client_id for secure authentication and authorization in API security, CloudHub deployments, and OAuth 2.0 integrations.",
 								"type": "text"
 							},
 							{
 								"key": "grant_type",
-								"value": "{{grant_type}}",
+								"value": "CLIENT_CREDENTIALS",
 								"description": "The grant_type in OAuth 2.0 specifies the method used to obtain an access token, such as client_credentials, authorization_code, password, or refresh_token.",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/oauth-app/api/v1/token",
+							"raw": "https://apiqa.bajajauto.com/oauth-app-qa/api/v1/token",
 							"host": [
-								"{{base_url}}"
+								"https://apiqa.bajajauto.com"
 							],
 							"path": [
 								"oauth-app",
@@ -64,27 +64,27 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "The client_id in MuleSoft is used for authentication and authorization in API security, CloudHub deployments, and OAuth 2.0 integrations.",
 										"type": "text"
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "The client_secret in MuleSoft is a confidential key used along with the client_id for secure authentication and authorization in API security, CloudHub deployments, and OAuth 2.0 integrations.",
 										"type": "text"
 									},
 									{
 										"key": "grant_type",
-										"value": "{{grant_type}}",
+										"value": "CLIENT_CREDENTIALS",
 										"description": "The grant_type in OAuth 2.0 specifies the method used to obtain an access token, such as client_credentials, authorization_code, password, or refresh_token.",
 										"type": "text"
 									}
 								],
 								"url": {
-									"raw": "{{base_url}}/oauth-app/api/v1/token",
+									"raw": "https://apiqa.bajajauto.com/oauth-app-qa/api/v1/token",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"oauth-app",
@@ -139,12 +139,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -164,9 +164,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/aggregator/product/api/v1/cdms/models-by-brand",
+									"raw": "https://apiqa.bajajauto.com/aggregator/product/api/v1/cdms/models-by-brand",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"aggregator",
@@ -198,12 +198,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -223,9 +223,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/aggregator/product/api/v1/cdms/get-states",
+									"raw": "https://apiqa.bajajauto.com/aggregator/product/api/v1/cdms/get-states",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"aggregator",
@@ -257,12 +257,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -282,9 +282,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/aggregator/product/api/v1/cdms/get-active-cities",
+									"raw": "https://apiqa.bajajauto.com/aggregator/product/api/v1/cdms/get-active-cities",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"aggregator",
@@ -316,12 +316,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -341,9 +341,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/aggregator/product/api/v1/cdms/get-active-states",
+									"raw": "https://apiqa.bajajauto.com/aggregator/product/api/v1/cdms/get-active-states",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"aggregator",
@@ -375,12 +375,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -400,9 +400,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/aggregator/product/api/v1/cdms/model-details-by-item-code",
+									"raw": "https://apiqa.bajajauto.com/aggregator/product/api/v1/cdms/model-details-by-item-code",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"aggregator",
@@ -434,12 +434,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -459,9 +459,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/aggregator/product/api/v1/cdms/models-by-dealer",
+									"raw": "https://apiqa.bajajauto.com/aggregator/product/api/v1/cdms/models-by-dealer",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"aggregator",
@@ -493,12 +493,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -523,9 +523,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/aggregator/pricing/api/v1/cdms/model-price-by-state",
+									"raw": "https://apiqa.bajajauto.com/aggregator/pricing/api/v1/cdms/model-price-by-state",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"aggregator",
@@ -557,12 +557,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -582,9 +582,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/aggregator/pricing/api/v1/cdms/model-price-by-dealer",
+									"raw": "https://apiqa.bajajauto.com/aggregator/pricing/api/v1/cdms/model-price-by-dealer",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"aggregator",
@@ -616,12 +616,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -641,9 +641,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/aggregator/product/api/v1/cdms/brands-by-bu",
+									"raw": "https://apiqa.bajajauto.com/aggregator/product/api/v1/cdms/brands-by-bu",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"aggregator",
@@ -681,12 +681,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -706,9 +706,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/enquiry/api/v1/cdms/create-enquiry",
+									"raw": "https://apiqa.bajajauto.com/enquiry/api/v1/cdms/create-enquiry",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"enquiry",
@@ -739,12 +739,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -764,9 +764,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/enquiry/api/v1/cdms/enquiry-details",
+									"raw": "https://apiqa.bajajauto.com/enquiry/api/v1/cdms/enquiry-details",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"enquiry",
@@ -797,12 +797,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -822,9 +822,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/enquiry/api/v1/cdms/enquiry-status",
+									"raw": "https://apiqa.bajajauto.com/enquiry/api/v1/cdms/enquiry-status",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"enquiry",
@@ -855,12 +855,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -880,9 +880,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/enquiry/api/v1/cdms/update-enquiry-false",
+									"raw": "https://apiqa.bajajauto.com/enquiry/api/v1/cdms/update-enquiry-false",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"enquiry",
@@ -913,12 +913,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -938,9 +938,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/web/opportunity/api/v1/lsq/create-opportunity",
+									"raw": "https://apiqa.bajajauto.com/web/opportunity/api/v1/lsq/create-opportunity",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"web",
@@ -972,12 +972,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -997,9 +997,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/web/opportunity/api/v1/lsq/update-opportunity",
+									"raw": "https://apiqa.bajajauto.com/web/opportunity/api/v1/lsq/update-opportunity",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"web",
@@ -1031,12 +1031,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -1056,9 +1056,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/web/pdi/api/v1/pdi-info-by-vin ",
+									"raw": "https://apiqa.bajajauto.com/web/pdi/api/v1/pdi-info-by-vin ",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"web",
@@ -1095,12 +1095,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -1120,9 +1120,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/aggregator/dealer/api/v1/cdms/nearest-dealers",
+									"raw": "https://apiqa.bajajauto.com/aggregator/dealer/api/v1/cdms/nearest-dealers",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"aggregator",
@@ -1154,12 +1154,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -1179,9 +1179,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/aggregator/dealer/api/v1/cdms /dealer-by-branch-code",
+									"raw": "https://apiqa.bajajauto.com/aggregator/dealer/api/v1/cdms /dealer-by-branch-code",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"aggregator",
@@ -1213,12 +1213,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -1238,9 +1238,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/aggregator/product/api/v1/cdms/dealer-locator",
+									"raw": "https://apiqa.bajajauto.com/aggregator/product/api/v1/cdms/dealer-locator",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"aggregator",
@@ -1272,12 +1272,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -1297,9 +1297,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/dealer/api/v1/cdms/updated-dealer ",
+									"raw": "https://apiqa.bajajauto.com/dealer/api/v1/cdms/updated-dealer ",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"dealer",
@@ -1330,12 +1330,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -1355,9 +1355,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/aggregator/dealer/api/v1/cdms/dealer-by-bu",
+									"raw": "https://apiqa.bajajauto.com/aggregator/dealer/api/v1/cdms/dealer-by-bu",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"aggregator",
@@ -1395,12 +1395,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -1420,9 +1420,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/aggregator/lead/api/v1/lsq/dedup",
+									"raw": "https://apiqa.bajajauto.com/aggregator/lead/api/v1/lsq/dedup",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"aggregator",
@@ -1460,12 +1460,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -1485,9 +1485,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/web/lead/api/v1/lsq/create-lead",
+									"raw": "https://apiqa.bajajauto.com/web/lead/api/v1/lsq/create-lead",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"web",
@@ -1519,12 +1519,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -1544,9 +1544,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/web-xapi/api/v1/lsq/update-lead",
+									"raw": "https://apiqa.bajajauto.com/web-xapi/api/v1/lsq/update-lead",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"web-xapi",
@@ -1567,12 +1567,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -1592,9 +1592,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/lead/api/v1/lsq/lead-score ",
+									"raw": "https://apiqa.bajajauto.com/lead/api/v1/lsq/lead-score ",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"lead",
@@ -1631,12 +1631,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -1656,9 +1656,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/booking/api/v1/cdms/create-booking",
+									"raw": "https://apiqa.bajajauto.com/booking/api/v1/cdms/create-booking",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"booking",
@@ -1689,12 +1689,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -1714,9 +1714,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/booking/api/v1/cdms/get-booking",
+									"raw": "https://apiqa.bajajauto.com/booking/api/v1/cdms/get-booking",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"booking",
@@ -1747,12 +1747,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -1772,9 +1772,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/booking/api/v1/cdms/updated-bookings",
+									"raw": "https://apiqa.bajajauto.com/booking/api/v1/cdms/updated-bookings",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"booking",
@@ -1805,12 +1805,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -1830,9 +1830,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/booking/api/v1/cdms/update-booking-false",
+									"raw": "https://apiqa.bajajauto.com/booking/api/v1/cdms/update-booking-false",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"booking",
@@ -1863,12 +1863,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -1894,9 +1894,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/web/booking/api/v1/lsq/create",
+									"raw": "https://apiqa.bajajauto.com/web/booking/api/v1/lsq/create",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"web",
@@ -1928,12 +1928,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -1953,9 +1953,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/dealer/api/v1/cdms/update-false",
+									"raw": "https://apiqa.bajajauto.com/dealer/api/v1/cdms/update-false",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"dealer",
@@ -1986,12 +1986,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -2011,9 +2011,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/product/api/v1/cdms/updated-item",
+									"raw": "https://apiqa.bajajauto.com/product/api/v1/cdms/updated-item",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"product",
@@ -2056,12 +2056,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -2120,12 +2120,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -2184,12 +2184,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -2254,12 +2254,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -2317,12 +2317,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -2386,12 +2386,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -2442,12 +2442,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -2505,12 +2505,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -2569,12 +2569,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -2633,12 +2633,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -2697,12 +2697,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -2768,12 +2768,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -2838,12 +2838,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -2911,12 +2911,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -2981,12 +2981,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -3054,12 +3054,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -3123,12 +3123,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -3186,12 +3186,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -3258,12 +3258,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -3320,15 +3320,15 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}"
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3"
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}"
+										"value": "5792f47e59824BF08022a7b9B6e53396"
 									},
 									{
 										"key": "grant_type",
-										"value": "{{grant_type}}"
+										"value": "CLIENT_CREDENTIALS"
 									}
 								],
 								"url": {
@@ -3375,12 +3375,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -3432,12 +3432,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -3499,12 +3499,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -3572,12 +3572,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -3642,12 +3642,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -3712,12 +3712,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -3782,12 +3782,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -3846,12 +3846,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -3916,12 +3916,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -3976,12 +3976,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -4045,12 +4045,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -4113,12 +4113,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -4184,12 +4184,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -4252,12 +4252,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -4326,12 +4326,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -4357,7 +4357,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://apiqa.bajajauto.com/service-user-xapi-qa/api/v1/feedback/responses ",
+									"raw": "https://https://apiqa.bajajauto.com/service-user-xapi-qa/api/v1/feedback/responses ",
 									"protocol": "https",
 									"host": [
 										"apiqa",
@@ -4398,12 +4398,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -4470,12 +4470,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -4544,12 +4544,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -4616,12 +4616,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -4647,7 +4647,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://apiqa.bajajauto.com/ib-xapi-qa/api/v1/feedback/tags ",
+									"raw": "https://https://apiqa.bajajauto.com/ib-xapi-qa/api/v1/feedback/tags ",
 									"protocol": "https",
 									"host": [
 										"apiqa",
@@ -4689,12 +4689,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -4720,7 +4720,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://apiqa.bajajauto.com/ib-xapi-qa/api/v1/feedback/cities",
+									"raw": "https://https://apiqa.bajajauto.com/ib-xapi-qa/api/v1/feedback/cities",
 									"protocol": "https",
 									"host": [
 										"apiqa",
@@ -4765,12 +4765,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -4841,12 +4841,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -4910,12 +4910,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -4979,12 +4979,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -5047,12 +5047,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -5115,12 +5115,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -5193,12 +5193,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -5224,9 +5224,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/booking/api/v1/cdms/order-status",
+									"raw": "https://apiqa.bajajauto.com/booking/api/v1/cdms/order-status",
 									"host": [
-										"{{base_url}}"
+										"https://apiqa.bajajauto.com"
 									],
 									"path": [
 										"booking",
@@ -5257,12 +5257,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -5329,12 +5329,12 @@
 								"header": [
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -5402,12 +5402,12 @@
 									},
 									{
 										"key": "client_id",
-										"value": "{{client_id}}",
+										"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 										"description": "Unique identifier for API authentication."
 									},
 									{
 										"key": "client_secret",
-										"value": "{{client_secret}}",
+										"value": "5792f47e59824BF08022a7b9B6e53396",
 										"description": "Confidential key for API authentication."
 									},
 									{
@@ -5475,17 +5475,17 @@
 	"variable": [
 		{
 			"key": "client_id",
-			"value": "client_id",
+			"value": "35c9c920b41b4a31b9f30e413d87e9c3",
 			"type": "string"
 		},
 		{
 			"key": "client_secret",
-			"value": "{{client_secret}}",
+			"value": "5792f47e59824BF08022a7b9B6e53396",
 			"type": "string"
 		},
 		{
 			"key": "enc_key",
-			"value": "{{enc_key}}",
+			"value": "R1NtbWhGbkM4OVhFTW5QbVllYmJzSDM1WFlia2NucHo=",
 			"type": "string"
 		},
 		{
@@ -5495,12 +5495,12 @@
 		},
 		{
 			"key": "base_url",
-			"value": "{{base_url}}",
+			"value": "https://apiqa.bajajauto.com",
 			"type": "string"
 		},
 		{
 			"key": "grant_type",
-			"value": "{{grant_type}}",
+			"value": "CLIENT_CREDENTIALS",
 			"type": "string"
 		},
 		{
@@ -5510,7 +5510,7 @@
 		},
 		{
 			"key": "service_base_url",
-			"value": "{{service_base_url}}",
+			"value": "https://apiqa.bajajauto.com",
 			"type": "string"
 		},
 		{

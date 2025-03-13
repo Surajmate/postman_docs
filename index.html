@@ -3,58 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Documentation</title>
+    <title>Mulesoft API Documentation</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.2/axios.min.js"></script>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
+        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; }
         h1 { color: #ff6f00; }
-        .endpoint { border: 1px solid #ddd; padding: 10px; margin: 10px 0; padding: 10px; }
-        button { padding: 5px 10px; margin-top: 5px; cursor: pointer; background: #ff6f00; color: #fff; border: none; }
-        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        .endpoint { border: 1px solid #ddd; padding: 15px; margin: 10px 0; border-radius: 5px; background: #f9f9f9; }
+        .input, textarea { width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px; }
+        .header-container { display: flex; gap: 10px; }
+        button { padding: 8px 12px; cursor: pointer; background: #ff6f00; color: #fff; border: none; border-radius: 5px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; white-space: pre-wrap; }
     </style>
 </head>
 <body>
-    <h1>API Documentation</h1>
+    <h1>Mulesoft API Documentation</h1>
     <div id="api-container">Loading API collection...</div>
 
     <script>
         async function loadCollection() {
             try {
-                // Adjust the JSON file path based on GitHub Pages
-                const response = await fetch('Mulesoft.postman_collection.json');
-                if (!response.ok) throw new Error("JSON file not found!");
+                const response = await fetch('my-collection.json'); 
+                if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
                 const collection = await response.json();
                 const apiContainer = document.getElementById("api-container");
-                apiContainer.innerHTML = ""; // Clear loading text
+                apiContainer.innerHTML = ""; 
 
-                collection.item.forEach(endpoint => {
-                    const div = document.createElement("div");
-                    div.classList.add("endpoint");
+                if (!collection.item || !Array.isArray(collection.item)) {
+                    throw new Error("Invalid JSON format: 'item' array not found!");
+                }
 
-                    const method = endpoint.request.method;
-                    const url = endpoint.request.url.raw || endpoint.request.url;
+                function extractRequests(items) {
+                    items.forEach(item => {
+                        if (item.request) {
+                            displayEndpoint(item);
+                        } else if (item.item && Array.isArray(item.item)) {
+                            extractRequests(item.item);
+                        }
+                    });
+                }
 
-                    div.innerHTML = `
-                        <h3>${endpoint.name}</h3>
-                        <p><strong>Method:</strong> ${method}</p>
-                        <p><strong>URL:</strong> ${url}</p>
-                        <button onclick="testAPI('${method}', '${url}', 'response-${endpoint.name}')">Try It</button>
-                        <pre id="response-${endpoint.name}">Click "Try It" to test</pre>
-                    `;
-                    apiContainer.appendChild(div);
-                });
+                extractRequests(collection.item);
             } catch (error) {
-                document.getElementById("api-container").innerHTML = `<p style="color:red;">Error loading API collection: ${error}</p>`;
+                document.getElementById("api-container").innerHTML = `<p style="color:red;">Error loading API collection: ${error.message}</p>`;
+                console.error("Fetch error:", error);
             }
         }
 
-        async function testAPI(method, url, responseId) {
+        function displayEndpoint(endpoint) {
+            const method = endpoint.request.method;
+            let url = endpoint.request.url.raw || "URL not found";
+            let headers = endpoint.request.header || [];
+            let body = "{}"; 
+
+            if (endpoint.request.body && endpoint.request.body.mode === "raw") {
+                body = endpoint.request.body.raw.trim();
+            }
+
+            const div = document.createElement("div");
+            div.classList.add("endpoint");
+
+            let inputFields = "";
+            const variableMatches = url.match(/{{(.*?)}}/g);
+            if (variableMatches) {
+                variableMatches.forEach(variable => {
+                    let key = variable.replace(/{{|}}/g, "");
+                    inputFields += `<label>${key}:</label> <input class="input" id="${endpoint.name}-${key}" placeholder="Enter ${key}">`;
+                });
+            }
+
+            let headerFields = "";
+            headers.forEach(header => {
+                headerFields += `
+                    <div class="header-container">
+                        <label>${header.key}:</label>
+                        <input class="input" id="${endpoint.name}-header-${header.key}" value="${header.value}" placeholder="Enter ${header.key}">
+                    </div>
+                `;
+            });
+
+            div.innerHTML = `
+                <h3>${endpoint.name || "Unnamed Endpoint"}</h3>
+                <p><strong>Method:</strong> ${method}</p>
+                <p><strong>URL:</strong> <span id="${endpoint.name}-url">${url}</span></p>
+
+                <h4>Headers:</h4>
+                ${headerFields || "<p>No headers found</p>"}
+
+                <h4>Body:</h4>
+                <textarea id="${endpoint.name}-body" rows="6">${body}</textarea>
+
+                <h4>Set Variables:</h4>
+                ${inputFields || "<p>No variables found</p>"}
+
+                <button onclick="testAPI('${method}', '${url}', '${endpoint.name}')">Try It</button>
+
+                <h4>Request Sent:</h4>
+                <pre id="request-${endpoint.name}">Click "Try It" to send request</pre>
+
+                <h4>Response:</h4>
+                <pre id="response-${endpoint.name}">Awaiting response...</pre>
+            `;
+
+            document.getElementById("api-container").appendChild(div);
+        }
+
+        async function testAPI(method, url, endpointName) {
             try {
-                const response = await axios({ method, url });
-                document.getElementById(responseId).textContent = JSON.stringify(response.data, null, 2);
+                document.querySelectorAll(`input[id^='${endpointName}-']`).forEach(input => {
+                    const key = input.id.replace(`${endpointName}-`, "");
+                    url = url.replace(`{{${key}}}`, input.value || `MISSING_${key}`);
+                });
+
+                let headers = { "Content-Type": "application/json" };
+                document.querySelectorAll(`input[id^='${endpointName}-header-']`).forEach(input => {
+                    const key = input.id.replace(`${endpointName}-header-`, "");
+                    headers[key] = input.value;
+                });
+
+                let options = { method, url, headers };
+
+                const bodyElement = document.getElementById(`${endpointName}-body`);
+                if (bodyElement && bodyElement.value.trim() !== "{}" && (method === "POST" || method === "PUT")) {
+                    options.data = JSON.parse(bodyElement.value);
+                }
+
+                document.getElementById(`request-${endpointName}`).textContent = JSON.stringify(options, null, 2);
+
+                const response = await axios(options);
+                document.getElementById(`response-${endpointName}`).textContent = JSON.stringify(response.data, null, 2);
             } catch (error) {
-                document.getElementById(responseId).textContent = `Error: ${error}`;
+                document.getElementById(`response-${endpointName}`).textContent = `Error: ${error.response ? error.response.status + ' - ' + error.response.statusText : error}`;
             }
         }
 
